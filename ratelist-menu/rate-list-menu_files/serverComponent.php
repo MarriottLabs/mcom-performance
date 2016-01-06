@@ -1,0 +1,2 @@
+
+//Bootstrapper._serverTime = '2015-12-28 16:19:57'; Bootstrapper._clientIP = '208.87.237.201'; var psj0 = 'http://nexus.ensighten.com/marriott/stage/code/70c8d0d923751456ece30fce4caf690e.js?conditionId0=395672';Bootstrapper.insertScript(psj0);var psj1 = 'http://nexus.ensighten.com/marriott/stage/code/d2a6fd1c46bc9385e8ac13fe27829596.js?conditionId0=348876';Bootstrapper.loadScriptCallback(psj1, Bootstrapper.callOnPageSpecificCompletion);Bootstrapper.setPageSpecificDataDefinitionIds([])
