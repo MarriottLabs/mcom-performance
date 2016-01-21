@@ -1,0 +1,80 @@
+var mboxCurrent=mboxFactories.get('default').get('marriott.com_global_controls_header',0);mboxCurrent.setEventTime('include.start');document.write('<div style="visibility: hidden; display: none" id="mboxImported-default-marriott.com_global_controls_header-0">');/* Offer id: 12321*/ 
+
+_mboxDefaultContentOffer = function() {
+  this._onLoad = function() {};
+};
+
+_mboxDefaultContentOffer.prototype.setOnLoad = function(_onLoad) {
+  this._onLoad = _onLoad;
+};
+
+_mboxDefaultContentOffer.prototype.shouldAppendClickHandler = function(_mbox, _clickHandlerDiv, _defaultDiv) {
+  var _result = _mbox.getFetcher && _mbox.getFetcher().getType() === 'ajax';
+  _result = _result && _mbox.getDiv() === _mbox.getDefaultDiv();
+  _result = _result && _clickHandlerDiv !== null;
+  _result = _result && _clickHandlerDiv !== _defaultDiv;
+
+  return  _result;
+};
+
+_mboxDefaultContentOffer.prototype.appendClickHandlerIfRequired = function(_mbox, _clickHandlerDiv, _defaultDiv) {
+  if (this.shouldAppendClickHandler(_mbox, _clickHandlerDiv, _defaultDiv)) {
+    _defaultDiv.appendChild(_clickHandlerDiv);
+  }
+};
+
+_mboxDefaultContentOffer.prototype.onClickHandler = function(_mbox) {
+  // just use _mbox.getName() when everyone is on mboxVersion >= 21
+  var _mboxName = _mbox.getName ? _mbox.getName() : _mbox.id;
+  var _clickDiv = document.getElementById('mboxClick-' + _mboxName);
+
+  if (_clickDiv !== null) {
+    _clickDiv.onclick();
+  }
+};
+
+_mboxDefaultContentOffer.prototype.show = function(_mbox) {
+  try {
+    var _self = this;
+    var _defaultDiv = _mbox.getDefaultDiv();
+
+    if (_defaultDiv === null) {
+      return 0;
+    }
+
+    _defaultDiv.onclick = function () {
+      _self.onClickHandler(_mbox);
+    };
+
+    var _clickHandlerDiv = _mbox.getDiv();
+    var _result = _mbox.hide();
+
+    if (_result === 1) {
+      this.appendClickHandlerIfRequired(_mbox, _clickHandlerDiv, _defaultDiv);
+      this._onLoad();
+    }
+
+    return _result;
+  } catch (e) {
+    var _errorMessage = "Default content offer caused exception: " + e;
+
+    if (_mbox.setMessage) {
+      _mbox.setMessage(_errorMessage);
+    } else {
+      _mbox.setError(_errorMessage);
+    }
+
+    return 0;
+  }
+};
+
+(function(){
+  var shouldShowMbox = mboxCurrent.getFetcher && mboxCurrent.getFetcher().getType() === 'ajax';
+
+  mboxCurrent.setOffer(new _mboxDefaultContentOffer());
+
+  if (shouldShowMbox) {
+    mboxCurrent.show();
+  }
+}());
+document.write('<!-- Offer Id: 70685  --><script type=\"text\/javascript\">\r\nif(\'4\' != \'\'){\r\n  var tntData = tntData ||\'\',tntValue=\'47289:4,\';\r\n  if(tntData.indexOf(tntValue) == -1){tntData += tntValue};\r\n  if(tntData != \'\'){document.cookie = \"tntData=\" + tntData + \"; path=\/;\"};\r\n};\r\n<\/script>');document.write('<!-- Offer Id: 108762  --><script>\r\n\/\/ForeSee integration V3\r\n\r\nvar adobe_ForeSee = function(){\r\n\t\/\/Wait for ForeSEe var, then add campaign info\r\n\tvar checksForFSR = 0;\r\n\t(function checkForeSee(){\r\n\t\tif(typeof(FSR)!=\'undefined\' && typeof(FSR.CPPS)!=\'undefined\' && typeof(FSR.CPPS.set)!=\'undefined\'){\r\n\t\t\tvar campID=\'\', campExp=\'\';\r\n\t\t\tvar arrayLength = ttMETA.length;\r\n\t\t\tfor (var i = 0; i < arrayLength; i++) {\r\n\t\t\t\tvar tmpVal = ttMETA[i];\r\n\t\t\t\tif(tmpVal!==\'\' && tmpVal.campaign!==\'\' && tmpVal.campaign.toLowerCase().indexOf(\'monitor\') == -1){\r\n\t\t\t\t\tcampID = \"mvt\"+tmpVal.campaignID;\r\n\t\t\t\t\tcampExp = tmpVal.experience;\r\n\t\t\t\t\tFSR.CPPS.set(campID, campExp);\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}else{\r\n\t\t\tsetTimeout(function(){\r\n\t\t\t\tchecksForFSR++;\r\n\t\t\t\tif(checksForFSR>=30) return;\r\n\t\t\t\tcheckForeSee();\r\n\t\t\t},500);\r\n\t\t}\r\n\t}());\r\n};\r\nadobe_ForeSee();\r\n\r\n<\/script>');document.write('<!-- Offer Id: 53254  --><script type=\"text\/javascript\">\r\n\/*T&T to SiteCat v3 ==>Response Plugin*\/\r\nwindow.s_tnt=window.s_tnt||\'\',tntVal=\'47289:4:0,\';\r\nif(window.s_tnt.indexOf(tntVal)==-1){window.s_tnt+=tntVal}\r\n<\/script>');document.write('<!-- Offer Id: 106108  --><script>\r\ntntState = \"IL\";\r\ntntCity = \"elmhurst\";\r\n<\/script>');document.write('<!-- Offer Id: 98864  --><script type=\"text\/javascript\">\r\n\/*mboxHighlight+ (1of2) v1 ==> Response Plugin*\/\r\nwindow.ttMETA=(typeof(window.ttMETA)!=\'undefined\')?window.ttMETA:[];window.ttMETA.push({\'mbox\':\'marriott.com_global_controls_header\',\'campaign\':\'Monitor: Global M.com Var (12\/17\/2013)\',\'experience\':\'D:\',\'offer\':\'Default Content\',\'campaignID\':\'47289\'});window.ttMBX=function(x){var mbxList=[];for(i=0;i<ttMETA.length;i++){if(ttMETA[i].mbox==x.getName()){mbxList.push(ttMETA[i])}}return mbxList[x.getId()]}\r\n<\/script>');document.write('</div>');mboxCurrent.setEventTime('include.end');mboxFactories.get('default').get('marriott.com_global_controls_header',0).loaded();mboxFactories.get('default').getPCId().forceId("1452876580346-105661.20_17");
