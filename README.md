@@ -18,7 +18,7 @@ Marriott.com web application is fully responsive.  We also use susy grid for lay
 
 
 
-*Below is the list of some of the javascript**
+**Below is the list of some of the javascript**
 *	micorelib - This file combines and minifies multiple files. This file includes following files - jquery, jquery ui, plugins like jcarouselLite, maginficPopup
 *	sitecatalystlib, omniTrackRun – This file contains javascript required for the tracking
 *	socialShareRewards 
