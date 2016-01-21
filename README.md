@@ -1,5 +1,24 @@
+**Marriott.com performance hackathon includes following pages**
+* Search results
+* Ratelist menu - Reservation
+* Hotel website home page
 
-**Marriott.com web application uses many JavaScript files.  Below is the list of some of the javascript**
+Marriott.com web application is fully responsive.  We also use susy grid for layouts, which uses different breakpoints as below.
+* XS -	240
+* S - 320
+* SM - 480
+* M	- 560
+* MML	- 672
+* ML - 768
+* MLL - 864
+* L - 960
+* XL - 1024
+* XXL - 1200
+* XXXL - 1400
+
+
+
+*Below is the list of some of the javascript**
 *	micorelib - This file combines and minifies multiple files. This file includes following files - jquery, jquery ui, plugins like jcarouselLite, maginficPopup
 *	sitecatalystlib, omniTrackRun – This file contains javascript required for the tracking
 *	socialShareRewards 
@@ -18,7 +37,7 @@
 *	behavioralTargeting
 *	doubleClick
 
-**CSS is generated using SASS. SASS files internally call partials which are per component. We also use susy grid for layout.**
+**CSS is generated using SASS. SASS files internally call partials which are per component.**
 *	foundation_all.css – This file contains all the base, reset, layout classes
 *	reservations.css,hws.css, search.css  - There is one main css file for each product.
 *	brands.css – This file consist of main brands file for brand color, button colors,
