@@ -4,17 +4,17 @@
 * Hotel website home page
 
 Marriott.com web application is fully responsive.  We also use susy grid for layouts, which uses different breakpoints as below.
-* XS -	240
-* S - 320
-* SM - 480
-* M	- 560
-* MML	- 672
-* ML - 768
-* MLL - 864
-* L - 960
-* XL - 1024
-* XXL - 1200
-* XXXL - 1400
+* XS -	240px
+* S - 320px
+* SM - 480px
+* M	- 560px
+* MML	- 672px
+* ML - 768px
+* MLL - 864px
+* L - 960px
+* XL - 1024px
+* XXL - 1200px
+* XXXL - 1400px
 
 
 
