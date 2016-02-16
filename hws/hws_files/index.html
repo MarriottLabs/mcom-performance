@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://s0.2mdn.net/3094553/1454972191089/MARRIOTT_ACQ_DS_PREMIER%2080K%20PULSE_160X600_HTML5/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>banner</title>
+    <!-- build:css styles/index.min.css -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- endbuild -->
+    <meta name="viewport" content="width=160, height=600, initial-scale=1.0">
+    <script>
+        var clickTag = "http://www.marriott.com/";
+
+        function clickThrough() {
+          window.open(clickTag);
+      }
+    </script>
+    <style>
+      div.accessible {
+        position: absolute;
+        left: 110%;
+        top: -3000px;
+      }
+    </style>
+</head>
+
+<body>
+    
+    <div id="banner" class="page-size" onclick="clickThrough()">
+        <img id="background" src="background.jpg" alt="Relaxing view of a pool">
+        <div id="bonusPtsWhite" style="transform-style: preserve-3d; perspective: 400px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+          <div class="accessible">Limited Time - 80,000 Bonus points</div>
+        </div>
+        <div id="bonusPtsDark"><span style="left: 0px; width: 1px; opacity: 0;"></span><span style="left: 1px; width: 1px; opacity: 0;"></span><span style="left: 2px; width: 1px; opacity: 0;"></span><span style="left: 3px; width: 1px; opacity: 0;"></span><span style="left: 4px; width: 1px; opacity: 0;"></span><span style="left: 5px; width: 1px; opacity: 0;"></span><span style="left: 6px; width: 1px; opacity: 0;"></span><span style="left: 7px; width: 1px; opacity: 0;"></span><span style="left: 8px; width: 1px; opacity: 0;"></span><span style="left: 9px; width: 1px; opacity: 0;"></span><span style="left: 10px; width: 1px; opacity: 0;"></span><span style="left: 11px; width: 1px; opacity: 0;"></span><span style="left: 12px; width: 1px; opacity: 0;"></span><span style="left: 13px; width: 1px; opacity: 0;"></span><span style="left: 14px; width: 1px; opacity: 0;"></span><span style="left: 15px; width: 1px; opacity: 0;"></span><span style="left: 16px; width: 1px; opacity: 0;"></span><span style="left: 17px; width: 1px; opacity: 0;"></span><span style="left: 18px; width: 1px; opacity: 0;"></span><span style="left: 19px; width: 1px; opacity: 0;"></span><span style="left: 20px; width: 1px; opacity: 0;"></span><span style="left: 21px; width: 1px; opacity: 0;"></span><span style="left: 22px; width: 1px; opacity: 0;"></span><span style="left: 23px; width: 1px; opacity: 0;"></span><span style="left: 24px; width: 1px; opacity: 0;"></span><span style="left: 25px; width: 1px; opacity: 0;"></span><span style="left: 26px; width: 1px; opacity: 0;"></span><span style="left: 27px; width: 1px; opacity: 0;"></span><span style="left: 28px; width: 1px; opacity: 0;"></span><span style="left: 29px; width: 1px; opacity: 0;"></span><span style="left: 30px; width: 1px; opacity: 0;"></span><span style="left: 31px; width: 1px; opacity: 0;"></span><span style="left: 32px; width: 1px; opacity: 0;"></span><span style="left: 33px; width: 1px; opacity: 0;"></span><span style="left: 34px; width: 1px; opacity: 0;"></span><span style="left: 35px; width: 1px; opacity: 0;"></span><span style="left: 36px; width: 1px; opacity: 0;"></span><span style="left: 37px; width: 1px; opacity: 0;"></span><span style="left: 38px; width: 1px; opacity: 0;"></span><span style="left: 39px; width: 1px; opacity: 0;"></span><span style="left: 40px; width: 1px; opacity: 0;"></span><span style="left: 41px; width: 1px; opacity: 0;"></span><span style="left: 42px; width: 1px; opacity: 0;"></span><span style="left: 43px; width: 1px; opacity: 0;"></span><span style="left: 44px; width: 1px; opacity: 0;"></span><span style="left: 45px; width: 1px; opacity: 0;"></span><span style="left: 46px; width: 1px; opacity: 0;"></span><span style="left: 47px; width: 1px; opacity: 0;"></span><span style="left: 48px; width: 1px; opacity: 0;"></span><span style="left: 49px; width: 1px; opacity: 0;"></span><span style="left: 50px; width: 1px; opacity: 0;"></span><span style="left: 51px; width: 1px; opacity: 0;"></span><span style="left: 52px; width: 1px; opacity: 0;"></span><span style="left: 53px; width: 1px; opacity: 0;"></span><span style="left: 54px; width: 1px; opacity: 0;"></span><span style="left: 55px; width: 1px; opacity: 0;"></span><span style="left: 56px; width: 1px; opacity: 0;"></span><span style="left: 57px; width: 1px; opacity: 0;"></span><span style="left: 58px; width: 1px; opacity: 0;"></span><span style="left: 59px; width: 1px; opacity: 0;"></span><span style="left: 60px; width: 1px; opacity: 0;"></span><span style="left: 61px; width: 1px; opacity: 0;"></span><span style="left: 62px; width: 1px; opacity: 0;"></span><span style="left: 63px; width: 1px; opacity: 0;"></span><span style="left: 64px; width: 1px; opacity: 0;"></span><span style="left: 65px; width: 1px; opacity: 0;"></span><span style="left: 66px; width: 1px; opacity: 0;"></span><span style="left: 67px; width: 1px; opacity: 0;"></span><span style="left: 68px; width: 1px; opacity: 0;"></span><span style="left: 69px; width: 1px; opacity: 0;"></span><span style="left: 70px; width: 1px; opacity: 0;"></span><span style="left: 71px; width: 1px; opacity: 0;"></span><span style="left: 72px; width: 1px; opacity: 0;"></span><span style="left: 73px; width: 1px; opacity: 0;"></span><span style="left: 74px; width: 1px; opacity: 0;"></span><span style="left: 75px; width: 1px; opacity: 0;"></span><span style="left: 76px; width: 1px; opacity: 0;"></span><span style="left: 77px; width: 1px; opacity: 0;"></span><span style="left: 78px; width: 1px; opacity: 0;"></span><span style="left: 79px; width: 1px; opacity: 0;"></span><span style="left: 80px; width: 1px; opacity: 0;"></span><span style="left: 81px; width: 1px; opacity: 0;"></span><span style="left: 82px; width: 1px; opacity: 0;"></span><span style="left: 83px; width: 1px; opacity: 0;"></span><span style="left: 84px; width: 1px; opacity: 0;"></span><span style="left: 85px; width: 1px; opacity: 0;"></span><span style="left: 86px; width: 1px; opacity: 0;"></span><span style="left: 87px; width: 1px; opacity: 0;"></span><span style="left: 88px; width: 1px; opacity: 0;"></span><span style="left: 89px; width: 1px; opacity: 0;"></span><span style="left: 90px; width: 1px; opacity: 0;"></span><span style="left: 91px; width: 1px; opacity: 0;"></span><span style="left: 92px; width: 1px; opacity: 0;"></span><span style="left: 93px; width: 1px; opacity: 0;"></span><span style="left: 94px; width: 1px; opacity: 0;"></span><span style="left: 95px; width: 1px; opacity: 0;"></span><span style="left: 96px; width: 1px; opacity: 0;"></span><span style="left: 97px; width: 1px; opacity: 0;"></span><span style="left: 98px; width: 1px; opacity: 0;"></span><span style="left: 99px; width: 1px; opacity: 0;"></span><span style="left: 100px; width: 1px; opacity: 0;"></span><span style="left: 101px; width: 1px; opacity: 0;"></span><span style="left: 102px; width: 1px; opacity: 0;"></span><span style="left: 103px; width: 1px; opacity: 0;"></span><span style="left: 104px; width: 1px; opacity: 0;"></span><span style="left: 105px; width: 1px; opacity: 0;"></span><span style="left: 106px; width: 1px; opacity: 0;"></span><span style="left: 107px; width: 1px; opacity: 0;"></span><span style="left: 108px; width: 1px; opacity: 0;"></span><span style="left: 109px; width: 1px; opacity: 0;"></span><span style="left: 110px; width: 1px; opacity: 0;"></span><span style="left: 111px; width: 1px; opacity: 0;"></span><span style="left: 112px; width: 1px; opacity: 0;"></span><span style="left: 113px; width: 1px; opacity: 0;"></span><span style="left: 114px; width: 1px; opacity: 0;"></span><span style="left: 115px; width: 1px; opacity: 0;"></span><span style="left: 116px; width: 1px; opacity: 0;"></span><span style="left: 117px; width: 1px; opacity: 0;"></span><span style="left: 118px; width: 1px; opacity: 0;"></span><span style="left: 119px; width: 1px; opacity: 0;"></span><span style="left: 120px; width: 1px; opacity: 0;"></span><span style="left: 121px; width: 1px; opacity: 0;"></span><span style="left: 122px; width: 1px; opacity: 0;"></span><span style="left: 123px; width: 1px; opacity: 0;"></span><span style="left: 124px; width: 1px; opacity: 0;"></span><span style="left: 125px; width: 1px; opacity: 0;"></span><span style="left: 126px; width: 1px; opacity: 0;"></span><span style="left: 127px; width: 1px; opacity: 0;"></span><span style="left: 128px; width: 1px; opacity: 0;"></span><span style="left: 129px; width: 1px; opacity: 0;"></span><span style="left: 130px; width: 1px; opacity: 0;"></span><span style="left: 131px; width: 1px; opacity: 0;"></span><span style="left: 132px; width: 1px; opacity: 0;"></span><span style="left: 133px; width: 1px; opacity: 0;"></span><span style="left: 134px; width: 1px; opacity: 0;"></span><span style="left: 135px; width: 1px; opacity: 0;"></span><span style="left: 136px; width: 1px; opacity: 0;"></span><span style="left: 137px; width: 1px; opacity: 0;"></span><span style="left: 138px; width: 1px; opacity: 0;"></span><span style="left: 139px; width: 1px; opacity: 0;"></span><span style="left: 140px; width: 1px; opacity: 0;"></span><span style="left: 141px; width: 1px; opacity: 0;"></span><span style="left: 142px; width: 1px; opacity: 0;"></span><span style="left: 143px; width: 1px; opacity: 0;"></span><span style="left: 144px; width: 1px; opacity: 0;"></span><span style="left: 145px; width: 1px; opacity: 0;"></span><span style="left: 146px; width: 1px; opacity: 0;"></span><span style="left: 147px; width: 1px; opacity: 0;"></span><span style="left: 148px; width: 1px; opacity: 0;"></span><span style="left: 149px; width: 1px; opacity: 0;"></span><span style="left: 150px; width: 1px; opacity: 0;"></span><span style="left: 151px; width: 1px; opacity: 0;"></span><span style="left: 152px; width: 1px; opacity: 0;"></span><span style="left: 153px; width: 1px; opacity: 0;"></span><span style="left: 154px; width: 1px; opacity: 0;"></span><span style="left: 155px; width: 1px; opacity: 0;"></span><span style="left: 156px; width: 1px; opacity: 0;"></span><span style="left: 157px; width: 1px; opacity: 0;"></span><span style="left: 158px; width: 1px; opacity: 0;"></span><span style="left: 159px; width: 1px; opacity: 0;"></span><span style="left: 160px; width: 1px; opacity: 0;"></span><span style="left: 161px; width: 1px; opacity: 0;"></span><span style="left: 162px; width: 1px; opacity: 0;"></span><span style="left: 163px; width: 1px; opacity: 0;"></span><span style="left: 164px; width: 1px; opacity: 0;"></span><span style="left: 165px; width: 1px; opacity: 0;"></span><span style="left: 166px; width: 1px; opacity: 0;"></span><span style="left: 167px; width: 1px; opacity: 0;"></span><span style="left: 168px; width: 1px; opacity: 0;"></span><span style="left: 169px; width: 1px; opacity: 0;"></span><span style="left: 170px; width: 1px; opacity: 0;"></span><span style="left: 171px; width: 1px; opacity: 0;"></span><span style="left: 172px; width: 1px; opacity: 0;"></span><span style="left: 173px; width: 1px; opacity: 0;"></span><span style="left: 174px; width: 1px; opacity: 0;"></span><span style="left: 175px; width: 1px; opacity: 0;"></span><span style="left: 176px; width: 1px; opacity: 0;"></span><span style="left: 177px; width: 1px; opacity: 0;"></span><span style="left: 178px; width: 1px; opacity: 0;"></span><span style="left: 179px; width: 1px; opacity: 0;"></span><span style="left: 180px; width: 1px; opacity: 0;"></span><span style="left: 181px; width: 1px; opacity: 0;"></span><span style="left: 182px; width: 1px; opacity: 0;"></span><span style="left: 183px; width: 1px; opacity: 0;"></span><span style="left: 184px; width: 1px; opacity: 0;"></span><span style="left: 185px; width: 1px; opacity: 0;"></span><span style="left: 186px; width: 1px; opacity: 0;"></span><span style="left: 187px; width: 1px; opacity: 0;"></span><span style="left: 188px; width: 1px; opacity: 0;"></span><span style="left: 189px; width: 1px; opacity: 0;"></span><span style="left: 190px; width: 1px; opacity: 0;"></span><span style="left: 191px; width: 1px; opacity: 0;"></span><span style="left: 192px; width: 1px; opacity: 0;"></span><span style="left: 193px; width: 1px; opacity: 0;"></span><span style="left: 194px; width: 1px; opacity: 0;"></span><span style="left: 195px; width: 1px; opacity: 0;"></span><span style="left: 196px; width: 1px; opacity: 0;"></span><span style="left: 197px; width: 1px; opacity: 0;"></span><span style="left: 198px; width: 1px; opacity: 0;"></span><span style="left: 199px; width: 1px; opacity: 0;"></span><span style="left: 200px; width: 1px; opacity: 0;"></span><span style="left: 201px; width: 1px; opacity: 0;"></span><span style="left: 202px; width: 1px; opacity: 0;"></span></div>
+        <img id="grey-bar" src="greybar.png" alt="">
+        <div id="fivePts" class="sprite" style="transform-style: preserve-3d; perspective: 400px; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 0, -1, 0.0025, 0, 1, 0, 0, 0, 0, 0, 1);">
+          <div class="accessible">5 points per $1 spent at Marriott</div>
+        </div>  
+        <div id="freeNight" class="sprite" style="transform-style: preserve-3d; perspective: 400px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+          <div class="accessible">Plus a free night stay every year</div>
+        </div>
+        <div id="learnMore" class="sprite">
+          <div class="accessible">Learn More</div>
+        </div>
+        <div id="card">
+            <img src="card.png" alt="Marriott REWARDS Silver Card">
+            <div id="cardShine" style="left: -30%; top: -30%;"></div>
+        </div>
+    </div>
+        
+    <!-- build:js scripts/main.min.js -->
+    <script src="CSSPlugin.min.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="TimelineLite.min.js"></script>
+    <script src="index.js"></script>
+    <!-- endbuild -->
+
+</body></html>
