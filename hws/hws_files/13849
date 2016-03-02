@@ -1,0 +1,158 @@
+var bk_results = {
+ "campaigns": [
+  {
+    "campaign": 70905,
+    "timestamp": 1455578891,
+    "categories": [
+    {
+     "categoryID": 153410,
+     "timestamp": 1455506066
+    },
+    {
+     "categoryID": 153419,
+     "timestamp": 1455578318
+    },
+    {
+     "categoryID": 153798,
+     "timestamp": 1455578823
+    },
+    {
+     "categoryID": 153799,
+     "timestamp": 1455578823
+    },
+    {
+     "categoryID": 153802,
+     "timestamp": 1455506095
+    },
+    {
+     "categoryID": 153831,
+     "timestamp": 1455575423
+    },
+    {
+     "categoryID": 153914,
+     "timestamp": 1455505432
+    },
+    {
+     "categoryID": 154672,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 155351,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 155352,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 155365,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 155370,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 155378,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 157784,
+     "timestamp": 1455506095
+    },
+    {
+     "categoryID": 158003,
+     "timestamp": 1455575423
+    },
+    {
+     "categoryID": 158112,
+     "timestamp": 1455505432
+    },
+    {
+     "categoryID": 158114,
+     "timestamp": 1455505432
+    },
+    {
+     "categoryID": 158948,
+     "timestamp": 1455578306
+    },
+    {
+     "categoryID": 158955,
+     "timestamp": 1455506066
+    },
+    {
+     "categoryID": 158964,
+     "timestamp": 1455578318
+    },
+    {
+     "categoryID": 158977,
+     "timestamp": 1455578306
+    },
+    {
+     "categoryID": 158981,
+     "timestamp": 1455578306
+    },
+    {
+     "categoryID": 158988,
+     "timestamp": 1455578306
+    },
+    {
+     "categoryID": 159014,
+     "timestamp": 1455578306
+    },
+    {
+     "categoryID": 160518,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 160519,
+     "timestamp": 1455506144
+    },
+    {
+     "categoryID": 171280,
+     "timestamp": 1455506095
+    },
+    {
+     "categoryID": 172238,
+     "timestamp": 1455289083
+    },
+    {
+     "categoryID": 172247,
+     "timestamp": 1455578781
+    },
+    {
+     "categoryID": 174214,
+     "timestamp": 1455505483
+    },
+    {
+     "categoryID": 174221,
+     "timestamp": 1455505432
+    },
+    {
+     "categoryID": 175093,
+     "timestamp": 1455575423
+    },
+    {
+     "categoryID": 198454,
+     "timestamp": 1455578823
+    },
+    {
+     "categoryID": 198458,
+     "timestamp": 1455289083
+    },
+    {
+     "categoryID": 293867,
+     "timestamp": 1455577893
+    },
+    {
+     "categoryID": 319474,
+     "timestamp": 1455578306
+    },
+    {
+     "categoryID": 408098,
+     "timestamp": 1455578861
+    }
+    ]
+  }
+ ]
+};

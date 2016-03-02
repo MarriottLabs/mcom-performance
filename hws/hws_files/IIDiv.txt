@@ -1,0 +1,16 @@
+var iDiv = document.createElement('div');
+iDiv.id = 'invitelayer';
+iDiv.style.position = 'absolute';
+iDiv.style.left='10px';
+iDiv.style.top='10px';
+iDiv.style.visibility='hidden';
+iDiv.style.zIndex='1000';
+document.getElementsByTagName('body')[0].appendChild(iDiv);
+
+var iDiv2 = document.createElement('div');
+iDiv2.id = 'invitelayercontent';
+iDiv2.style.position = 'relative';
+iDiv2.style.left='0px';
+iDiv2.style.top='0px';
+iDiv2.style.zIndex='100';
+document.getElementById("invitelayer").appendChild(iDiv2);

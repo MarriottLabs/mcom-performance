@@ -1,3 +1,19 @@
+marriott.com performance hackathon
+==================================
+
+Submission information
+----------------------
+
+To participate in the hackathon and to deploy your site to the http://labs.marriott.com/ site, you will need to fork this repository, and submit your changes in a pull request.
+
+1. Click on the fork button located near the top of this page. 
+2. Clone your copy locally. 
+3. Make your changes.
+4. Submit a Pull Request to this repostiory. 
+
+Technical information
+---------------------
+
 **Marriott.com performance hackathon includes following pages**
 * Search results
 * Ratelist menu - Reservation
@@ -45,3 +61,4 @@ Marriott.com web application is fully responsive.  We also use susy grid for lay
 *	marriottPrint.css – This file is been used for printing a web page
 *	IEOverride.css – This file is used for IE override for global components like header, footer.
 *	HWS-ie.css – This is the product IE specific overwrite css.
+

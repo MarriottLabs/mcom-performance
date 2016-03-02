@@ -1,0 +1,50 @@
+
+
+(function () {
+    var s = document.createElement('script');
+    var p = "    var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://ad.doubleclick.net/ddm/activity/src=4810757;type=sales;cat=2wyr8vtu;qty=1;cost=0;u1=;u4=02%2F26%2F2016;u5=02%2F27%2F2016;u6=;u9=1;u10=Washington;u11=US;u12=1;u13=DC;u16=[pc];u17=;u19=;ord=[OrderID]');\
+    document.body.appendChild(i);\
+";
+
+    s.type = 'text/javascript';
+    s.async = true;
+    if (s.textContent) {
+        s.textContent = p;
+    } else {
+        s.text = p;
+    }
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+
+
+
+(function () {
+    var s = document.createElement('script');
+    var p = "    var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_nid=sojern__adx_open_bidder_seat&google_hm=HmyxmaMFMY-KS4GNJ_1sOg&google_ula=29485332&google_cm&google_sc');\
+    document.body.appendChild(i);\
+";
+
+    s.type = 'text/javascript';
+    s.async = true;
+    if (s.textContent) {
+        s.textContent = p;
+    } else {
+        s.text = p;
+    }
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+
