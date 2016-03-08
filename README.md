@@ -7,9 +7,45 @@ Submission information
 To participate in the hackathon and to deploy your site to the http://labs.marriott.com/ site, you will need to fork this repository, and submit your changes in a pull request.
 
 1. Click on the fork button located near the top of this page. 
+
+![Fork Highlight](http://labs.marriott.com/docs/images/fork_highlight.jpg)
+
 2. Clone your copy locally. 
+
+```bash
+git clone https://github.com/your-github-username/mcom-performance
+```
+
 3. Make your changes.
-4. Submit a Pull Request to this repostiory. 
+
+It's generally a good idea to work off of branches. In the example below I'll create a branch called speed-boost.
+
+```bash
+git checkout -b speed-boost
+```
+
+Now feel free to edit the files how you'd like, using whatever method you are comfortable with.
+
+4. Commit changes and push to your cloned repository.
+
+
+The example command below shows how I would add and commit my changes to my modified ```index.html``` file.
+```bash
+git add index.html
+git commit -m 'Added 10x speed boost to index.html'
+git push origin speed-boost
+```
+
+4. Submit a Pull Request with your changes
+
+Once you've pushed your work to GitHub, you can open a Pull Request. 
+
+For more information on this process, refer to the [GitHub Forking Projects](https://guides.github.com/activities/forking/) guide.
+
+There is a special process in place for this repository that takes submitted pull requests and previews the code changes. You will see a bot
+account commenting on your pull request with more information.
+
+![Bot Example](http://labs.marriott.com/docs/images/bot_example.jpg)
 
 Technical information
 ---------------------
